@@ -8,7 +8,7 @@ const getNote = async (noteId:string) => {
   return data;
 }  
 
-const UpdateNotePage = async ({params}) => {
+const UpdateNotePage = async ({params}:any) => {
 
 
   const note = await getNote(params.id);

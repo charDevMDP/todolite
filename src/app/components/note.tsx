@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
-const note = ({note}) => {
+const note = ({note}:any) => {
 
   const { id, title } = note || {};
 

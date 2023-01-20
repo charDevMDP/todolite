@@ -10,7 +10,7 @@ const getNote = async (noteId:string) => {
 }  
 
 
-const Notepage = async ({params}) => {
+const Notepage = async ({params}:any) => {
 
   //const router = useRouter();
   

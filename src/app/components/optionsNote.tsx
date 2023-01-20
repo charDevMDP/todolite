@@ -10,7 +10,7 @@ async function deleteNote(id:string) {
 }
 
 
-const optionsNote = ({id}) => {
+const optionsNote = ({id}:any) => {
 
   const router = useRouter();
 
