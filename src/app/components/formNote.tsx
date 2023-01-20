@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react'
 import PocketBase, { Record } from 'pocketbase';
 
-const FormNote = ({ note = { title: null, content: null}}) => {
+const FormNote = ({ note = { id: null, title: null, content: null}}) => {
 
   const router = useRouter();
 
