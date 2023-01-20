@@ -1,12 +1,13 @@
-import FormAdd from '@/app/components/formAdd'
+import FormNote from '@/app/components/formNote'
+import Title from '@/app/components/title'
 import React from 'react'
 
 const AddNotepage = () => {
   return (
     <div>
-      <p>Agregar tarea</p>
+      <Title title="Agregar Nota" />
       <div>
-        <FormAdd/>
+        <FormNote/>
       </div>
     </div>
   )
