@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react'
 import PocketBase, { Record } from 'pocketbase';
 
-const FormNote = ({ note = {}}) => {
+const FormNote = ({ note = { title: null, content: null}}) => {
 
   const router = useRouter();
 
@@ -14,7 +14,7 @@ const FormNote = ({ note = {}}) => {
 
   useEffect(() => {
     console.log(note)
-    if(note.title){
+    if(note.title && note.content){
       setTitle(note.title);
       setContent(note.content);
       setActionbtn('Actualizar')
