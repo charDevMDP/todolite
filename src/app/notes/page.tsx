@@ -3,7 +3,7 @@ import PocketBase from 'pocketbase'
 import Title from "../components/title";
 import style from './page.module.css'
 
-async function getData() {
+async function getNote() {
 
   const db = new PocketBase('http://127.0.0.1:8090')
   const data = await db.collection('notes').getList();
@@ -14,7 +14,7 @@ async function getData() {
 
 const NotesPage = async () => {
 
-  const notes = await getData();
+  const notes = await getNote();
 
   return (
     <div>
