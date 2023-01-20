@@ -24,7 +24,7 @@ const Notepage = async ({params}) => {
     <div>
        <Title title="Detalle Nota" />
        <div className='flex flex-col items-center justify-center'>
-          <div  className='bg-yellow-100 my-2 p-5 rounded-br-lg shadow-md h-48 w-1/2 flex flex-col justify-around'>
+          <div  className='bg-yellow-100 my-2 p-5 rounded-br-lg shadow-md h-48 w-100 md:w-1/2 flex flex-col justify-around'>
           <p className='text-3xl font-semibold text-center'>{title}</p>
           <p className='text-lg text-center'>{content}</p>
           <p className='text-sm text-gray-700 italic text-right'>{created}</p>

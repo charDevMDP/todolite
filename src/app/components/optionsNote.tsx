@@ -23,11 +23,11 @@ const optionsNote = ({id}) => {
 
   return (
 
-      <div className='flex justify-between w-[16rem] mt-5'>
-        <button onClick={() => router.push(`/notes/update/${id}`)} className="bg-cyan-300 hover:bg-cyan-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+      <div className='flex flex-col md:flex-row w-full justify-between md:w-[16rem] mt-5'>
+        <button onClick={() => router.push(`/notes/update/${id}`)} className="bg-cyan-300 hover:bg-cyan-400 text-gray-800 font-bold py-2 px-4 rounded md:inline-flex items-center">
           <span>Actualizar</span>
         </button>
-        <button  onClick={dlt}  className="bg-red-300 hover:bg-red-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+        <button  onClick={dlt}  className="bg-red-300 hover:bg-red-400 text-gray-800 font-bold py-2 px-4 rounded md:inline-flex items-center mt-2 md:mt-0">
           <span>Eliminar</span>
         </button>
         </div>
