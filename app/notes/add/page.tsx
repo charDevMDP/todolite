@@ -1,5 +1,5 @@
-import FormNote from '@/app/components/formNote'
-import Title from '@/app/components/title'
+import FormNote from 'app/components/formNote'
+import Title from 'app/components/title'
 import React from 'react'
 
 const AddNotepage = () => {

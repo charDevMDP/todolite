@@ -1,5 +1,5 @@
 
-import Title from '@/app/components/title';
+import Title from 'app/components/title';
 import React from 'react'
 import OptionsNote from '../../components/optionsNote'
 
