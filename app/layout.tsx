@@ -1,4 +1,3 @@
-'use client'
 import Navbar from './components/navbar'
 import './globals.css'
 
@@ -12,7 +11,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <head />
     
       <body className='p-4'> 
-      <Navbar/>
       <div className='mx-5'>
         {children}
       </div>
