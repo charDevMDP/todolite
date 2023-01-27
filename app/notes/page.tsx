@@ -1,7 +1,6 @@
 import Note from "../components/note";
 import PocketBase from 'pocketbase'
 import Title from "../components/title";
-import style from './page.module.css'
 
 async function getNote() {
 
