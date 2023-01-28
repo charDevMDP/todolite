@@ -1,14 +1,6 @@
 import Note from "../components/note";
-import PocketBase from 'pocketbase'
 import Title from "../components/title";
-
-async function getNote() {
-
-  const db = new PocketBase('http://127.0.0.1:8090')
-  const data = await db.collection('notes').getList();
-  return data?.items as any[]
-}
-
+import { getNote } from "./services/notes.service";
 
 
 const NotesPage = async () => {
