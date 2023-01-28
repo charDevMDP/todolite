@@ -1,22 +1,13 @@
 
 import Title from 'app/components/title';
-import React from 'react'
 import OptionsNote from '../../components/optionsNote'
-
-const getNote = async (noteId:string) => {
-  const res= await fetch(`http://127.0.0.1:8090/api/collections/notes/records/${noteId}`,{next:{revalidate:60}});
-  const data = await res.json();
-  return data;
-}  
+import { getNote } from '../services/notes.service';
 
 
 const Notepage = async ({params}:any) => {
 
   //const router = useRouter();
-  
-  
   const note = await getNote(params.id);
-
 
   const { id, title, content, created } = note || {};
 

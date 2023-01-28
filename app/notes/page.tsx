@@ -1,11 +1,10 @@
 import Note from "../components/note";
 import Title from "../components/title";
-import { getNote } from "./services/notes.service";
-
+import { getNotes } from "./services/notes.service";
 
 const NotesPage = async () => {
 
-  const notes = await getNote();
+  const notes = await getNotes();
 
   return (
     <div>
