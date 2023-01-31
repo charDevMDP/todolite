@@ -2,9 +2,12 @@ import PocketBase from 'pocketbase'
 
 export const getNotes = async ():Promise<any> => {
 
-  const db = new PocketBase('http://127.0.0.1:8090')
-  const data = await db.collection('notes').getList();
-  return data?.items as any[]
+  //const db = new PocketBase('http://127.0.0.1:8090')
+  //return await db.collection('notes').getList();
+  const url = `https://rickandmortyapi.com/api/character`
+  return fetch(url)
+    .then((resp) => resp.json())
+    .then((data) => data.results)
 }
 
 export const getNote = async (noteId:string) => {
