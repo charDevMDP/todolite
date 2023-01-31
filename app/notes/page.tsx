@@ -2,9 +2,15 @@ import Note from "../components/note";
 import Title from "../components/title";
 import { getNotes } from "./services/notes.service";
 
+const getData = async () => {
+  const notes = await getNotes();
+  return notes
+}
+
+
 const NotesPage = async () => {
 
-  const notes = await getNotes();
+  const notes = await getData();
 
   return (
     <div>
